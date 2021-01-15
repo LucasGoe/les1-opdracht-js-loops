@@ -4,10 +4,16 @@
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
+
 // Verander de waardes van de array dusdanig dat er -"je" achter iedere naam wordt geplakt
 // Wanneer je de volledige array logt zie je alle nieuwe waardes
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
+// for (const names)
 
+for (let i=names.length; i--;) {
+    names[i] = names[i] + "je";
+}
+console.log(names);
 
 
 // --------------------------
@@ -20,7 +26,10 @@ const numbers = [2, 4, 5, 29, 38];
 // Wanneer je de volledige array logt zie je alle nieuwe waardes
 // console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
 
-
+for (let i=numbers.length; i--;) {
+    numbers[i] = numbers[i] * 3;
+}
+console.log(numbers);
 
 // --------------------------
 // Opdracht 3
@@ -32,4 +41,7 @@ const figures = [4, 6, 12, 34, 1];
 // Wanneer je de volledige array logt zie je alle nieuwe waardes
 // console.log(figures) geeft: [ 7, 9, 15, 37, 4 ]
 
-
+for (let i=figures.length; i--;) {
+    figures[i] = figures[i] + 3;
+}
+console.log(figures);
